@@ -179,6 +179,8 @@ public class ApiErrInterceptor implements Interceptor {
         if (!logHeaders && hasRequestBody) {
             requestStartMessage += " (" + requestBody.contentLength() + "-byte body)";
         }
+        //初始化保存日志变量
+        logMessage = new StringBuilder();
         logger.log(requestStartMessage);
 
         if (logHeaders) {

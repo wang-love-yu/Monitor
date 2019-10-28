@@ -16,7 +16,11 @@ package com.qimai.qmmonitor.interceptor;
  * limitations under the License.
  */
 
+import android.text.TextUtils;
 import android.util.Log;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.io.EOFException;
 import java.io.IOException;
@@ -273,8 +277,14 @@ public class ApiErrInterceptor implements Interceptor {
                 if (contentLength != 0) {
                     logger.log("");
                     logger.log(buffer.clone().readString(charset));
-                    String tempMessage = logMessage.toString();
-                    Log.d(TAG, "intercept: " + tempMessage);
+                    //String respose = buffer.clone().readString(charset);
+                    if (!filterResponse(buffer.clone().readString(charset))) {
+                        //记录错误日志
+                        String errorMessage = logMessage.toString();
+                        Log.d(TAG, "intercept: errorMessage = " + errorMessage);
+                    }
+
+                    // Log.d(TAG, "intercept: " + tempMessage);
                 }
 
                 logger.log("<-- END HTTP (" + buffer.size() + "-byte body)");
@@ -282,6 +292,27 @@ public class ApiErrInterceptor implements Interceptor {
         }
 
         return response;
+    }
+
+    private boolean filterResponse(String readString) {
+        if (!TextUtils.isEmpty(readString)) {
+            return filterApiRequestFailedRule(readString);
+        }
+        return false;
+    }
+
+    /***
+     * 可以重写这个方法自定义接口成功 返回列入false的情况
+     * */
+    public boolean filterApiRequestFailedRule(String readString) {
+        try {
+            JSONObject jsonObject = new JSONObject(readString);
+            return jsonObject.optBoolean("status");
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        return false;
     }
 
     /**

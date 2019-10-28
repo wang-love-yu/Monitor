@@ -134,7 +134,7 @@ public class ApiErrInterceptor implements Interceptor {
         }
     };
 
-    private volatile ApiErrInterceptor.Level level = ApiErrInterceptor.Level.NONE;
+    private volatile ApiErrInterceptor.Level level = Level.BODY;
 
     /**
      * Change the level at which this interceptor logs.

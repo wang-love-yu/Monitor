@@ -49,7 +49,7 @@ import static okhttp3.internal.platform.Platform.INFO;
 public class ApiErrInterceptor implements Interceptor {
 
     public StringBuilder logMessage = new StringBuilder();
-
+    private static final String TAG = "ApiErrInterceptor";
 
     private static final Charset UTF8 = Charset.forName("UTF-8");
 
@@ -131,6 +131,7 @@ public class ApiErrInterceptor implements Interceptor {
         public void log(String message) {
             Platform.get().log(INFO, message, null);
             Log.d("httpLog", message);
+            logMessage.append(message + "\n");
         }
     };
 
@@ -268,10 +269,12 @@ public class ApiErrInterceptor implements Interceptor {
                     logger.log("<-- END HTTP (binary " + buffer.size() + "-byte body omitted)");
                     return response;
                 }
-
+                //这里存储接口响应的数据，在这里过滤接口返回的false 存储到数据库
                 if (contentLength != 0) {
                     logger.log("");
                     logger.log(buffer.clone().readString(charset));
+                    String tempMessage = logMessage.toString();
+                    Log.d(TAG, "intercept: " + tempMessage);
                 }
 
                 logger.log("<-- END HTTP (" + buffer.size() + "-byte body)");

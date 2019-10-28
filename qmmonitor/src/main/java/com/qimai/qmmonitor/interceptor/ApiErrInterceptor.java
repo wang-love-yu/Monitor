@@ -235,6 +235,8 @@ public class ApiErrInterceptor implements Interceptor {
         try {
             response = chain.proceed(request);
         } catch (Exception e) {
+            logMessage.append(e.toString());
+            Log.d(TAG, "intercept: logMessage= " + logMessage);
             logger.log("<-- HTTP FAILED: " + e);
             throw e;
         }

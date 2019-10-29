@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <!--
+    数据库名字
+    -->
+    <dbname value="monitor" />
+
+    <!--
+    数据库的版本号
+    -->
+    <version value="1" />
+
+    <!--
+    要映射的实体类路径
+        For example:
+        <list>
+            <mapping class="com.test.model.Reader" />
+            <mapping class="com.test.model.Magazine" />
+        </list>
+    -->
+    <list>
+        <mapping class="com.qimai.qmmonitor.bean.ApiErrorDao" />
+    </list>
+
+
+
+</litepal>

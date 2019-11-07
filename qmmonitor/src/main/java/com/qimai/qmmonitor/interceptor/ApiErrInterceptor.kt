@@ -22,18 +22,10 @@ import android.util.Log
 import com.qimai.qmmonitor.MonitorUtils
 import com.qimai.qmmonitor.ThrowWrapper
 import com.qimai.qmmonitor.bean.ApiErrorCode
-import com.qimai.qmmonitor.bean.ApiErrorCode.BAD_GATEWAY
 import com.qimai.qmmonitor.bean.ApiErrorCode.CONNECT_ERROR
 import com.qimai.qmmonitor.bean.ApiErrorCode.CONNECT_TIME_OUT
-import com.qimai.qmmonitor.bean.ApiErrorCode.FORBIDDEN
-import com.qimai.qmmonitor.bean.ApiErrorCode.GATEWAY_TIMEOUT
 import com.qimai.qmmonitor.bean.ApiErrorCode.HTTP_ERROR
-import com.qimai.qmmonitor.bean.ApiErrorCode.INTERNAL_SERVER_ERROR
-import com.qimai.qmmonitor.bean.ApiErrorCode.NOT_FOUND
-import com.qimai.qmmonitor.bean.ApiErrorCode.REQUEST_TIMEOUT
-import com.qimai.qmmonitor.bean.ApiErrorCode.SERVICE_UNAVAILABLE
 import com.qimai.qmmonitor.bean.ApiErrorCode.SSL_ERROR
-import com.qimai.qmmonitor.bean.ApiErrorCode.UNAUTHORIZED
 import com.qimai.qmmonitor.bean.ApiErrorCode.UNKNOWN
 
 import org.json.JSONException
@@ -44,19 +36,13 @@ import java.io.IOException
 import java.nio.charset.Charset
 import java.util.concurrent.TimeUnit
 
-import okhttp3.Connection
 import okhttp3.Headers
 import okhttp3.Interceptor
-import okhttp3.MediaType
 import okhttp3.OkHttpClient
-import okhttp3.Request
-import okhttp3.RequestBody
 import okhttp3.Response
-import okhttp3.ResponseBody
 import okhttp3.internal.http.HttpHeaders
 import okhttp3.internal.platform.Platform
 import okio.Buffer
-import okio.BufferedSource
 import retrofit2.HttpException
 
 import okhttp3.internal.platform.Platform.INFO
@@ -357,14 +343,14 @@ abstract class ApiErrInterceptor : Interceptor {
             }
             else -> {
                 //子类去处理异常
-                val otherThrowable: ThrowWrapper? = handleOtherThrowable()
+                val otherThrowable: ThrowWrapper? = handleOtherThrowable(exception)
                 return otherThrowable ?: ThrowWrapper(UNKNOWN, exception.message)
             }
         }
 
     }
     //子类实现方法，处理一些自定义异常或者比较特殊的异常
-    abstract fun handleOtherThrowable(): ThrowWrapper?
+    abstract fun handleOtherThrowable(exception: Exception): ThrowWrapper?
 
     private fun filterResponse(readString: String): Boolean {
         return if (!TextUtils.isEmpty(readString)) {

@@ -5,12 +5,11 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion 29
-    buildToolsVersion "29.0.2"
+    compileSdkVersion 28
     defaultConfig {
         applicationId "com.qimai"
-        minSdkVersion 15
-        targetSdkVersion 29
+        minSdkVersion 16
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -33,5 +32,12 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation project(path: ':qmmonitor')
+    debugImplementation 'com.didichuxing.doraemonkit:doraemonkit:1.2.1'
+    releaseImplementation 'com.didichuxing.doraemonkit:doraemonkit-no-op:1.2.0'
+    implementation 'com.github.bumptech.glide:glide:4.10.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.10.0'
+    implementation project(path: ':chartview')
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
 
 }

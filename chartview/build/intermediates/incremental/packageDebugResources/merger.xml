@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/leiwang/Desktop/project/Monitor/chartview/src/main/res"/><source path="/Users/leiwang/Desktop/project/Monitor/chartview/build/generated/res/rs/debug"/><source path="/Users/leiwang/Desktop/project/Monitor/chartview/build/generated/res/resValues/debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/leiwang/Desktop/project/Monitor/chartview/src/main/res"><file name="click_icon" path="/Users/leiwang/Desktop/project/Monitor/chartview/src/main/res/mipmap-mdpi/click_icon.png" qualifiers="mdpi-v4" type="mipmap"/><file name="ic_launcher" path="/Users/leiwang/Desktop/project/Monitor/chartview/src/main/res/mipmap-mdpi/ic_launcher.png" qualifiers="mdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="/Users/leiwang/Desktop/project/Monitor/chartview/src/main/res/mipmap-mdpi/ic_launcher_round.png" qualifiers="mdpi-v4" type="mipmap"/><file path="/Users/leiwang/Desktop/project/Monitor/chartview/src/main/res/values/colors.xml" qualifiers=""><color name="colorPrimary">#3F51B5</color><color name="colorPrimaryDark">#303F9F</color><color name="colorAccent">#FF4081</color><color name="ylable_textColor">#99989d</color><color name="default_color">#5287F7</color><color name="axisColor">#26000000</color><color name="startColor">#5e70b6f7</color><color name="endColor">#7EC0EE</color></file><file path="/Users/leiwang/Desktop/project/Monitor/chartview/src/main/res/values/strings.xml" qualifiers=""><string name="app_name">linecharviewmodule</string></file><file path="/Users/leiwang/Desktop/project/Monitor/chartview/src/main/res/values/attrs.xml" qualifiers=""><attr format="dimension" name="defaultTextSize"/><attr format="color" name="yLableTextColor"/><attr format="color" name="defaultColor"/><attr format="color" name="xLableTextColor"/><attr format="color" name="axisColor"/><attr format="dimension" name="defaultStrokeWidth"/><attr format="dimension" name="axisMarginHeight"/><attr format="string" name="yLableText"/><attr format="boolean" name="isNeedBg"/><attr format="boolean" name="isNeedDrawConnectYDataLine"/><attr format="dimension" name="dottedLineWidth"/><attr format="color" name="connectLineColor"/><attr format="boolean" name="isNeedDrawYScale"/><declare-styleable name="LineChartView">
+        <attr format="reference" name="showPicResource"/>
+        <attr format="dimension" name="pointMarginHeight"/>
+        <attr format="dimension" name="pointDefaultRadius"/>
+        <attr format="dimension" name="pointClickRadius"/>
+        <attr format="dimension" name="textAndClickBgMargin"/>
+        <attr format="color" name="clickBgColor"/>
+        <attr format="color" name="startColor"/>
+        <attr format="color" name="endColor"/>
+        <attr format="boolean" name="clickable"/>
+        <attr name="isNeedBg"/>
+        <attr name="defaultTextSize"/>
+        <attr name="yLableTextColor"/>
+        <attr name="defaultColor"/>
+        <attr name="xLableTextColor"/>
+        <attr name="axisColor"/>
+        <attr name="defaultStrokeWidth"/>
+        <attr name="axisMarginHeight"/>
+        <attr name="yLableText"/>
+        <attr name="isNeedDrawConnectYDataLine"/>
+        <attr name="dottedLineWidth"/>
+        <attr name="connectLineColor"/>
+
+    </declare-styleable><declare-styleable name="BarChartView">
+        <attr format="dimension" name="axisXItemWidth"/>
+        <attr format="dimension" name="axisXItemMargin"/>
+        <attr format="color" name="bgColor"/>
+        <attr name="defaultTextSize"/>
+        <attr name="yLableTextColor"/>
+        <attr name="defaultColor"/>
+        <attr name="xLableTextColor"/>
+        <attr name="axisColor"/>
+        <attr name="defaultStrokeWidth"/>
+        <attr name="axisMarginHeight"/>
+        <attr name="yLableText"/>
+        <attr name="isNeedBg"/>
+        <attr name="isNeedDrawConnectYDataLine"/>
+        <attr name="dottedLineWidth"/>
+        <attr name="connectLineColor"/>
+        <attr name="isNeedDrawYScale"/>
+
+    </declare-styleable><declare-styleable name="PieChartView">
+        <attr format="color" name="textColor"/>
+        <attr format="dimension" name="textOutCircleMargin"/>
+        <attr format="boolean" name="isNeedInside"/>
+        <attr format="string" name="insideText"/>
+        <attr format="color" name="insideBgColor"/>
+        <attr format="dimension" name="insideTextSize"/>
+        <attr format="color" name="insideTextColor"/>
+        <attr format="float" name="insideRadiusPercent"/>
+    </declare-styleable></file></source><source path="/Users/leiwang/Desktop/project/Monitor/chartview/build/generated/res/rs/debug"/><source path="/Users/leiwang/Desktop/project/Monitor/chartview/build/generated/res/resValues/debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/leiwang/Desktop/project/Monitor/chartview/src/debug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/leiwang/Desktop/project/Monitor/chartview/src/debug/res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="PieChartView">
+        <attr format="color" name="textColor"/>
+        <attr format="dimension" name="textOutCircleMargin"/>
+        <attr format="boolean" name="isNeedInside"/>
+        <attr format="string" name="insideText"/>
+        <attr format="color" name="insideBgColor"/>
+        <attr format="dimension" name="insideTextSize"/>
+        <attr format="color" name="insideTextColor"/>
+        <attr format="float" name="insideRadiusPercent"/>
+    </declare-styleable><declare-styleable name="LineChartView">
+        <attr format="reference" name="showPicResource"/>
+        <attr format="dimension" name="pointMarginHeight"/>
+        <attr format="dimension" name="pointDefaultRadius"/>
+        <attr format="dimension" name="pointClickRadius"/>
+        <attr format="dimension" name="textAndClickBgMargin"/>
+        <attr format="color" name="clickBgColor"/>
+        <attr format="color" name="startColor"/>
+        <attr format="color" name="endColor"/>
+        <attr format="boolean" name="clickable"/>
+        <attr name="isNeedBg"/>
+        <attr name="defaultTextSize"/>
+        <attr name="yLableTextColor"/>
+        <attr name="defaultColor"/>
+        <attr name="xLableTextColor"/>
+        <attr name="axisColor"/>
+        <attr name="defaultStrokeWidth"/>
+        <attr name="axisMarginHeight"/>
+        <attr name="yLableText"/>
+        <attr name="isNeedDrawConnectYDataLine"/>
+        <attr name="dottedLineWidth"/>
+        <attr name="connectLineColor"/>
+
+    </declare-styleable><declare-styleable name="BarChartView">
+        <attr format="dimension" name="axisXItemWidth"/>
+        <attr format="dimension" name="axisXItemMargin"/>
+        <attr format="color" name="bgColor"/>
+        <attr name="defaultTextSize"/>
+        <attr name="yLableTextColor"/>
+        <attr name="defaultColor"/>
+        <attr name="xLableTextColor"/>
+        <attr name="axisColor"/>
+        <attr name="defaultStrokeWidth"/>
+        <attr name="axisMarginHeight"/>
+        <attr name="yLableText"/>
+        <attr name="isNeedBg"/>
+        <attr name="isNeedDrawConnectYDataLine"/>
+        <attr name="dottedLineWidth"/>
+        <attr name="connectLineColor"/>
+        <attr name="isNeedDrawYScale"/>
+
+    </declare-styleable></configuration></mergedItems></merger>

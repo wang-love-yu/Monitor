@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/bt"
+        android:text="bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+   <!-- <com.qimai.suitlines.SuitLines
+        xmlns:line="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/suitlines"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        line:xySize="12"
+        line:xyColor="#999999"
+        line:lineType="curve"
+        line:lineStyle="solid"
+        line:needEdgeEffect="true"
+        line:colorEdgeEffect="@color/colorPrimaryDark"
+        line:needClickHint="true"
+        line:colorHint="@color/colorPrimary"
+        line:maxOfVisible="25"
+        line:countOfY="6"/>-->
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lc_chart"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"/>
+    
+</LinearLayout>

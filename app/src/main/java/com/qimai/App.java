@@ -3,6 +3,7 @@ package com.qimai;
 import android.app.Application;
 import android.util.Log;
 
+import com.didichuxing.doraemonkit.DoraemonKit;
 import com.qimai.qmmonitor.MonitorUtils;
 
 public class App extends Application {
@@ -13,5 +14,6 @@ public class App extends Application {
         super.onCreate();
         Log.d(TAG, "onCreate: ");
         MonitorUtils.Companion.init(this);
+        DoraemonKit.install(this);
     }
 }

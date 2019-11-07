@@ -74,7 +74,7 @@ import javax.net.ssl.SSLHandshakeException
  */
 abstract class ApiErrInterceptor : Interceptor {
 
-    var logMessage = StringBuilder()
+    var logMessage = StringBuffer()
 
     private val logger = object : ApiErrInterceptor.Logger {
 

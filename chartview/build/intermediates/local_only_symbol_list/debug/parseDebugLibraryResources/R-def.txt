@@ -1,0 +1,50 @@
+R_DEF: Internal format may change without notice
+local
+attr axisColor
+attr axisMarginHeight
+attr? axisXItemMargin
+attr? axisXItemWidth
+attr? bgColor
+attr? clickBgColor
+attr? clickable
+attr connectLineColor
+attr defaultColor
+attr defaultStrokeWidth
+attr defaultTextSize
+attr dottedLineWidth
+attr? endColor
+attr? insideBgColor
+attr? insideRadiusPercent
+attr? insideText
+attr? insideTextColor
+attr? insideTextSize
+attr isNeedBg
+attr isNeedDrawConnectYDataLine
+attr isNeedDrawYScale
+attr? isNeedInside
+attr? pointClickRadius
+attr? pointDefaultRadius
+attr? pointMarginHeight
+attr? showPicResource
+attr? startColor
+attr? textAndClickBgMargin
+attr? textColor
+attr? textOutCircleMargin
+attr xLableTextColor
+attr yLableText
+attr yLableTextColor
+color axisColor
+color colorAccent
+color colorPrimary
+color colorPrimaryDark
+color default_color
+color endColor
+color startColor
+color ylable_textColor
+mipmap click_icon
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+styleable BarChartView axisXItemWidth axisXItemMargin bgColor defaultTextSize yLableTextColor defaultColor xLableTextColor axisColor defaultStrokeWidth axisMarginHeight yLableText isNeedBg isNeedDrawConnectYDataLine dottedLineWidth connectLineColor isNeedDrawYScale
+styleable LineChartView showPicResource pointMarginHeight pointDefaultRadius pointClickRadius textAndClickBgMargin clickBgColor startColor endColor clickable isNeedBg defaultTextSize yLableTextColor defaultColor xLableTextColor axisColor defaultStrokeWidth axisMarginHeight yLableText isNeedDrawConnectYDataLine dottedLineWidth connectLineColor
+styleable PieChartView textColor textOutCircleMargin isNeedInside insideText insideBgColor insideTextSize insideTextColor insideRadiusPercent

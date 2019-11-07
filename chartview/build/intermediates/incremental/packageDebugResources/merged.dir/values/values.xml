@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr format="color" name="axisColor"/>
+    <attr format="dimension" name="axisMarginHeight"/>
+    <attr format="color" name="connectLineColor"/>
+    <attr format="color" name="defaultColor"/>
+    <attr format="dimension" name="defaultStrokeWidth"/>
+    <attr format="dimension" name="defaultTextSize"/>
+    <attr format="dimension" name="dottedLineWidth"/>
+    <attr format="boolean" name="isNeedBg"/>
+    <attr format="boolean" name="isNeedDrawConnectYDataLine"/>
+    <attr format="boolean" name="isNeedDrawYScale"/>
+    <attr format="color" name="xLableTextColor"/>
+    <attr format="string" name="yLableText"/>
+    <attr format="color" name="yLableTextColor"/>
+    <color name="axisColor">#26000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="default_color">#5287F7</color>
+    <color name="endColor">#7EC0EE</color>
+    <color name="startColor">#5e70b6f7</color>
+    <color name="ylable_textColor">#99989d</color>
+    <string name="app_name">linecharviewmodule</string>
+    <declare-styleable name="BarChartView">
+        <attr format="dimension" name="axisXItemWidth"/>
+        <attr format="dimension" name="axisXItemMargin"/>
+        <attr format="color" name="bgColor"/>
+        <attr name="defaultTextSize"/>
+        <attr name="yLableTextColor"/>
+        <attr name="defaultColor"/>
+        <attr name="xLableTextColor"/>
+        <attr name="axisColor"/>
+        <attr name="defaultStrokeWidth"/>
+        <attr name="axisMarginHeight"/>
+        <attr name="yLableText"/>
+        <attr name="isNeedBg"/>
+        <attr name="isNeedDrawConnectYDataLine"/>
+        <attr name="dottedLineWidth"/>
+        <attr name="connectLineColor"/>
+        <attr name="isNeedDrawYScale"/>
+
+    </declare-styleable>
+    <declare-styleable name="LineChartView">
+        <attr format="reference" name="showPicResource"/>
+        <attr format="dimension" name="pointMarginHeight"/>
+        <attr format="dimension" name="pointDefaultRadius"/>
+        <attr format="dimension" name="pointClickRadius"/>
+        <attr format="dimension" name="textAndClickBgMargin"/>
+        <attr format="color" name="clickBgColor"/>
+        <attr format="color" name="startColor"/>
+        <attr format="color" name="endColor"/>
+        <attr format="boolean" name="clickable"/>
+        <attr name="isNeedBg"/>
+        <attr name="defaultTextSize"/>
+        <attr name="yLableTextColor"/>
+        <attr name="defaultColor"/>
+        <attr name="xLableTextColor"/>
+        <attr name="axisColor"/>
+        <attr name="defaultStrokeWidth"/>
+        <attr name="axisMarginHeight"/>
+        <attr name="yLableText"/>
+        <attr name="isNeedDrawConnectYDataLine"/>
+        <attr name="dottedLineWidth"/>
+        <attr name="connectLineColor"/>
+
+    </declare-styleable>
+    <declare-styleable name="PieChartView">
+        <attr format="color" name="textColor"/>
+        <attr format="dimension" name="textOutCircleMargin"/>
+        <attr format="boolean" name="isNeedInside"/>
+        <attr format="string" name="insideText"/>
+        <attr format="color" name="insideBgColor"/>
+        <attr format="dimension" name="insideTextSize"/>
+        <attr format="color" name="insideTextColor"/>
+        <attr format="float" name="insideRadiusPercent"/>
+    </declare-styleable>
+</resources>

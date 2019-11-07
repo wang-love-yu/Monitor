@@ -24,9 +24,6 @@
         line:colorHint="@color/colorPrimary"
         line:maxOfVisible="25"
         line:countOfY="6"/>-->
-    <com.github.mikephil.charting.charts.LineChart
-        android:id="@+id/lc_chart"
-        android:layout_width="match_parent"
-        android:layout_height="400dp"/>
+
     
 </LinearLayout>

@@ -16,7 +16,6 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.RelativeLayout
 import android.widget.ScrollView
-import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.activity_main.view.*
 import java.lang.Math.*
 import kotlin.math.abs

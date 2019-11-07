@@ -1,2 +1,2 @@
-include ':app', ':qmmonitor', ':chartview'
+include ':app', ':qmmonitor'
 rootProject.name='Monitor'

@@ -195,7 +195,7 @@ abstract class ApiErrInterceptor : Interceptor {
             requestStartMessage += " (" + requestBody!!.contentLength() + "-byte body)"
         }
         //初始化保存日志变量
-        logMessage = StringBuilder()
+        logMessage = StringBuffer()
         logger.log(requestStartMessage)
 
         if (logHeaders) {
